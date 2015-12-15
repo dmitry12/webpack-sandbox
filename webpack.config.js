@@ -1,5 +1,6 @@
 var path = require('path');
 var autoprefixer = require('autoprefixer');
+var cssnext = require('cssnext');
 
 var config = {
     entry: {
@@ -21,12 +22,12 @@ var config = {
             },
             {
                 test:   /\.css$/,
-                loader: "style-loader!css-loader!postcss-loader"
+                loader: "style-loader!css-loader!postcss-loader!cssnext-loader"
             }
         ]
     },
     postcss: function() {
-        return [autoprefixer]
+        return [autoprefixer, cssnext]
     }
 }
 
