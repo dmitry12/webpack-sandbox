@@ -1,4 +1,5 @@
 var path = require('path');
+var autoprefixer = require('autoprefixer');
 
 var config = {
     entry: {
@@ -14,13 +15,20 @@ var config = {
                 test: /.jsx?$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
-                include: path.resolve(__dirname, 'client/src/js'),
                 query: {
                     presets: ['es2015', 'react']
                 }
+            },
+            {
+                test:   /\.css$/,
+                loader: "style-loader!css-loader!postcss-loader"
             }
         ]
+    },
+    postcss: function() {
+        return [autoprefixer]
     }
 }
 
 module.exports = config;
+
