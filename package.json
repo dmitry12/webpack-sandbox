@@ -1,22 +1,22 @@
 {
-  "name": "webpack-stack",
-  "version": "0.0.0",
+  "name": "webpack-build",
+  "version": "0.0.1",
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "react": "^0.14.3"
+  },
+  "devDependencies": {
     "babel-core": "^6.3.17",
     "babel-loader": "^6.2.0",
     "babel-preset-react": "^6.3.13",
     "webpack": "^1.12.9",
     "babel-preset-es2015": "^6.3.13",
-    "webpack-dev-server": "^1.14.0"
-  },
-  "devDependencies": {
+    "webpack-dev-server": "^1.14.0",
     "babel-core": "^6.3.17",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "react": "^0.14.3",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
