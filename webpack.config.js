@@ -37,7 +37,7 @@ module.exports = {
                 loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader!cssnext-loader')
             },
             {
-                test: /.js?$/,
+                test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 query: {
