@@ -26,7 +26,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, './dist/static'),
+        path: path.resolve(__dirname, './client/dist/static'),
         filename: '[name].js',
         publicPath: devServer.publicPath
     },
