@@ -4,6 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "express": "^4.13.3",
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
   },
@@ -32,7 +33,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "./node_modules/webpack/bin/webpack.js",
     "build-debug": "./node_modules/webpack/bin/webpack.js --display-modules --profile --display-reasons",
-    "server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "webpack-server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "express-server": "node server/index.js"
   },
   "author": "",
   "license": "ISC"
