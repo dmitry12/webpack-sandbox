@@ -1,0 +1,4 @@
+.hello {
+    color: color(red alpha(-50%));
+    display: flex;
+}
